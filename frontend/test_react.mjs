@@ -1,0 +1,1 @@
+import { mockApiService } from './src/services/mockApiService.js'; mockApiService.getProducts({search:'', category:'All Categories', stock:'All Stock', status:'All Status', sort:'Recently Updated'}).then(res => console.log('Products:', res.length)).catch(console.error);

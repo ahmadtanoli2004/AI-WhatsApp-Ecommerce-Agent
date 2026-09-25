@@ -1,0 +1,153 @@
+/* Hidden by default on screen */
+.print-only {
+  display: none;
+}
+
+/* Print Styles */
+@media print {
+  .print-only {
+    display: block !important;
+  }
+  
+  .order-slip {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #000;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2cm;
+  }
+
+  .slip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .slip-brand h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .slip-brand p {
+    margin: 5px 0 0 0;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .slip-title {
+    text-align: right;
+  }
+
+  .slip-title h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .slip-meta {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  .slip-addresses {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .slip-address-box {
+    width: 48%;
+  }
+
+  .slip-address-box h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .slip-address-box p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+
+  .slip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+
+  .slip-table th, .slip-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  .slip-table th {
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .text-center { text-align: center; }
+  .text-right { text-align: right; }
+
+  .slip-summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .slip-payment-info {
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  .slip-summary-table {
+    width: 40%;
+    border-collapse: collapse;
+  }
+
+  .slip-summary-table td {
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .slip-summary-table td:first-child {
+    text-align: left;
+    color: #666;
+  }
+
+  .slip-grand-total td {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    border-top: 2px solid #333;
+    padding-top: 12px;
+  }
+
+  .slip-footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+}

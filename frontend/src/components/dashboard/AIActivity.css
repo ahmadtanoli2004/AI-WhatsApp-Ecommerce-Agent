@@ -1,0 +1,70 @@
+.ai-activity-card {
+  grid-column: span 4;
+  padding: 0;
+}
+
+.activity-feed {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.activity-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.activity-icon-container {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Connect the timeline items except the last one */
+.activity-item:not(:last-child) .activity-icon-container::after {
+  content: '';
+  position: absolute;
+  top: 32px;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  background-color: var(--border-color);
+}
+
+.text-primary { color: var(--primary); }
+.text-warning { color: var(--warning); }
+.text-info { color: var(--info); }
+
+.activity-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.activity-text {
+  font-size: 0.875rem;
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.activity-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 1280px) {
+  .ai-activity-card {
+    grid-column: span 12;
+  }
+}

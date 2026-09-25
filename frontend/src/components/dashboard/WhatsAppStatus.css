@@ -1,0 +1,92 @@
+.wa-status-card {
+  grid-column: span 12;
+  background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 15px -3px rgba(18, 140, 126, 0.3);
+}
+
+.wa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.wa-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.wa-icon {
+  color: white;
+}
+
+.wa-header .card-title {
+  color: white;
+  margin: 0;
+}
+
+.wa-connection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.wa-connection .status-dot {
+  background-color: #4ADE80; /* Brighter green for dark bg */
+  box-shadow: 0 0 8px rgba(74, 222, 128, 0.6);
+}
+
+.wa-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.wa-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.wa-stat-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.wa-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.wa-manage-btn {
+  width: 100%;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.wa-manage-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .wa-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
